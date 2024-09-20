@@ -3,9 +3,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Jon Barron</title>
+    <title>Cheng-You Lu</title>
 
-    <meta name="author" content="Jon Barron">
+    <meta name="author" content="Cheng-You Lu">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -55,7 +55,7 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-    <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()">
+    <tr onmouseout="diva360_stop()" onmouseover="diva360_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='diva360_image'><video  width=100% muted autoplay loop>
@@ -65,14 +65,14 @@
           <img src='images/diva360_null.png' width=100%>
         </div>
         <script type="text/javascript">
-          function nerfcasting_start() {
+          function diva360_start() {
             document.getElementById('diva360_null').style.opacity = "1";
           }
 
-          function nerfcasting_stop() {
+          function diva360_stop() {
             document.getElementById('diva360_null').style.opacity = "0";
           }
-          nerfcasting_stop()
+          diva360_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
@@ -81,7 +81,7 @@
         </a>
         <br>
 				
-	<strong>Cheng-You Lu</strong>, Peisen Zhou, Angela Xing, Chandradeep Pokhariya
+	<strong>Cheng-You Lu<sup>1</sup></strong>, Peisen Zhou<sup>1</sup>, Angela Xing<sup>1</sup>, Chandradeep Pokhariya
         , Arnab Dey, Ishaan N Shah, Rugved Mavidipalli, Dylan Hu, Andrew Comport
         , Kefan Chen, Srinath Sridhar
 
@@ -99,47 +99,41 @@
     </tr>
 
 
-    <tr onmouseout="flash_cache_stop()" onmouseover="flash_cache_start()">
+    <tr onmouseout="NeuralODF_stop()" onmouseover="NeuralODF_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='flash_cache_image'><video  width=100% muted autoplay loop>
-          <source src="images/flash_cache.mp4" type="video/mp4">
+          <div class="two" id='NeuralODF_image'><video  width=100% muted autoplay loop>
+          <source src="images/NeuralODF.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video></div>
-          <img src='images/flash_cache.jpg' width=100%>
+          <img src='images/NeuralODF.jpg' width=100%>
         </div>
         <script type="text/javascript">
           function flash_cache_start() {
-            document.getElementById('flash_cache_image').style.opacity = "1";
+            document.getElementById('NeuralODF_image').style.opacity = "1";
           }
 
           function flash_cache_stop() {
-            document.getElementById('flash_cache_image').style.opacity = "0";
+            document.getElementById('NeuralODF_image').style.opacity = "0";
           }
           flash_cache_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://benattal.github.io/flash-cache/">
-          <span class="papertitle">Flash Cache: Reducing Bias in Radiance Cache Based Inverse Rendering</span>
+        <a href="https://arxiv.org/abs/2206.05837">
+          <span class="papertitle">NeuralODF: Learning Omnidirectional Distance Fields for 3D Shape Representation</span>
         </a>
         <br>
-				<a href="https://benattal.github.io/">Benjamin Attal</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-        <a href="https://phogzone.com/">Peter Hedman</a>, <br>
-				<strong>Jonathan T. Barron</strong>,
-        <a href="https://www.cs.cmu.edu/~motoole2/">Matthew O'Toole</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>
+	Trevor Houchens<sup>1</sup>, <strong>Cheng-You Lu<sup>1</sup></strong>, Shivam Duggal, Rao Fu, Srinath Sridhar
         <br>
-        <em>ECCV</em>, 2024 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+        <em>Technical Report</em>, 2022
         <br>
-        <a href="https://benattal.github.io/flash-cache/">project page</a>
+        <a href="https://arxiv.org/abs/2206.05837">project page</a>
         /
-        <a href="TODO">arXiv</a>
+        <a href="https://arxiv.org/abs/2206.05837">arXiv</a>
         <p></p>
         <p>
-          A more physically-accurate inverse rendering system based on radiance caching for recovering geometry, materials, and lighting from RGB images of an object or scene.
+          Omnidirectional Distance Fields (ODFs), a 3D shape representation that stores distances from any 3D position in any direction, along with efficient algorithms for converting ODFs to and from common 3D formats.
         </p>
       </td>
     </tr>
@@ -149,7 +143,7 @@
               <td style="padding:0px">
                 <br>
                 <p style="text-align:right;font-size:small;">
-                  Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
+		Template from <a href="https://jonbarron.info/">Jon Barron</a>
                 </p>
               </td>
             </tr>
